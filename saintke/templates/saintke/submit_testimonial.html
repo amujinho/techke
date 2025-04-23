@@ -1,0 +1,12 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Submit Your Testimonials</title>
+</head>
+<body>
+<h2> Share your Experience </h2>
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+</form>
+</body>

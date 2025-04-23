@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Kryptonite Defense - Bringing together Cybersecurity services</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'css/templatemo-574-mexant.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+<!--
+
+TemplateMo 574 Mexant
+
+https://templatemo.com/tm-574-mexant
+
+-->
+  </head>
+
+<body>
+
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <nav class="main-nav">
+                      <!-- ***** Logo Start ***** -->
+                      <a href="#" class="logo">
+                          <img src="{% static 'images/logo.png' %}" style="width: 250; height: 100px; border-radius: 10px;" alt="">
+                      </a>
+                      <!-- ***** Logo End ***** -->
+                      <!-- ***** Menu Start ***** -->
+                      <ul class="nav">
+                          <li class="scroll-to-section"><a href="#top" class="active">{{ current_time }}</a></li>
+                          <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                          <li class="scroll-to-section"><a href="#services">Services</a></li>
+                          <li class="scroll-to-section"><a href="#about">About</a></li>
+                          <li class="has-sub">
+                              <a href="javascript:void(0)">Pages</a>
+                              <ul class="sub-menu">
+                                  <li><a href="{% url 'about' %}">About Us</a></li>
+                                  <li><a href="{% url 'our-services' %}">Our Services</a></li>
+                                  <li><a href="{% url 'contact-us' %}">Contact Us</a></li>
+                              </ul>
+                          </li>
+                          <li class="scroll-to-section"><a href="#testimonials">Testimonials</a></li>
+                          <li><a href="{% url 'contact-us' %}">Contact Support</a></li> 
+                      </ul>        
+                      <a class='menu-trigger'>
+                          <span>Menu</span>
+                      </a>
+                      <!-- ***** Menu End ***** -->
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <div class="swiper-container" id="top">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="slide-inner" style="background-image: url({% static 'images/slider-002.png' %})">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="header-text">
+                  <h2>Kryptonite<em> is a game</em> changer<br>&amp; affordable<em>to all.</em></h2>
+                  <div class="div-dec"></div>
+                  <p> Kryptonite is committed to bring together a congregation of cybersecurity experts with those with potential threats. We are committed to ensure good service delivery and mitigate cyber threats </p>
+                  <div class="buttons">
+                    <div class="green-button">
+                      <a href="{% url 'our-services' %}">Discover More</a>
+                    </div>
+                    <div class="orange-button">
+                      <a href="{% url 'contact-us' %}">Contact Us</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-inner" style="background-image: url({% static 'images/headoi.jpg' %})">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="header-text">
+                  <h2><em>Digital</em> Space for you <br>&amp; Understand <em>Cybersecuity</em> Benefits</h2>
+                  <div class="div-dec"></div>
+                  <p> Cyber threats has been a major problem in this digital era. It has been a dream to many, to have a good protection of sensitive information and prevent fraud.  </p>
+                  <div class="buttons">
+                    <div class="green-button">
+                      <a href="{% url 'our-services' %}">Discover More</a>
+                    </div>
+                    <div class="orange-button">
+                      <a href="{% url 'contact-us' %}">Contact Us</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-inner" style="background-image: url({% static 'images/slider-001.png' %})">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="header-text">
+                  <h2>Best Online <br>&amp; Cybersecurity <em>Services</em></h2>
+                  <div class="div-dec"></div>
+                  <p> Ensuring healthy web space across all countries, all races. Moreover, we offer general IT services. </p>
+                  <div class="buttons">
+                    <div class="green-button">
+                      <a href="{% url 'our-services' %}">Discover More</a>
+                    </div>
+                    <div class="orange-button">
+                      <a href="{% url 'contact-us' %}">Contact Us</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next swiper-button-white"></div>
+    <div class="swiper-button-prev swiper-button-white"></div>
+  </div>
+
+  <!-- ***** Main Banner Area End ***** -->
+
+  <section class="services" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="service-item">
+            <i class="fas fa-archive"></i>
+            <h4>Digital Forensics</h4>
+            <p>We create forensically sound copies of data using tools like FTK or Magnet AXIOM </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <i class="fas fa-cloud"></i>
+            <h4>Social Media Monitoring</h4>
+            <p>Threat detection, Sentiment analysis, Real-Time Monitoring, Geolocation tracking and dark web surveillance</p>          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <i class="fas fa-charging-station"></i>
+            <h4>Financial Fraud Mitigation</h4>
+            <p>Online scams, money laundering and embezzlement</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <i class="fas fa-suitcase"></i>
+            <h4>VPN TRACKING</h4>
+            <p>Unmasking VPN's & Proxies, Intercepting/analyzing VPN and cloud data and removing metadata for anonymity<p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <i class="fas fa-archway"></i>
+            <h4>CYBER COVERT OPERATIONS</h4>
+            <p>Bugging phones and computers remotely and custom Malware for tracking</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <i class="fas fa-puzzle-piece"></i>
+            <h4>Drone Based Security Services</h4>
+            <p>Real-Time Monitoring, Remote access, Versatility and highly cost-effective</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="simple-cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <h4>Cybersecurity <em>Solutions</em> and <strong>Financial</strong> Investments</h4>
+        </div>
+        <div class="col-lg-7">
+          <div class="buttons">
+            <div class="green-button">
+              <a href="#">Discover More</a>
+            </div>
+            <div class="orange-button">
+              <a href="#">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-us" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading">
+            <h6>About Us</h6>
+            <h4>What is available</h4>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="naccs">
+            <div class="tabs">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="menu">
+                    <div class="active gradient-border"><span>Cyber Security</span></div>
+                    <div class="gradient-border"><span>Artificial Intelligence</span></div>
+                    <div class="gradient-border"><span>Web Coding</span></div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <ul class="nacc">
+                    <li class="active">
+                      <div>
+                        <div class="main-list">
+                          <span class="title">Project Title</span>
+                          <span class="title">Budget</span>
+                          <span class="title">Time taken</span>
+                          <!--<span class="title">Client</span>-->
+                        </div>
+                        <div class="list-item">
+                          <span class="item item-title">Small business</span>
+                          <span class="item">$2,000-$3,500 per month</span>
+                          <span class="item">While contract lasts</span>
+                          <!--<span class="item">-</span>-->
+                        </div>
+                        <div class="list-item">
+                          <span class="item item-title">Midsize businesses</span>
+                          <span class="item">$10,000-$50,000 for comprehensive projects</span>
+                          <span class="item">While contract lasts</span>
+                          <!--<span class="item">-</span>-->
+                        </div>
+                        <div class="list-item">
+                          <span class="item item-title">Large entreprises</span>
+                          <span class="item">$50,000-$200,000 for advanced solutions.</span>
+                          <span class="item">While contract lasts</span>
+                          <!--<span class="item">-</span>-->
+                        </div>
+                        <!--<div class="list-item last-item">
+                          <span class="item item-title">All-new Website</span>
+                          <span class="item">$3,000 to $6,600</span>
+                          <span class="item">-</span>
+                          <span class="item">-</span>
+                        </div>-->
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="main-list">
+                          <span class="title">Project Title</span>
+                          <span class="title">Budget</span>
+                          <span class="title">Time taken</span>
+                          <!--<span class="title">Client</span>-->
+                        </div>
+                        <div class="list-item">
+                          <span class="item item-title">Basic AI tools</span>
+                          <span class="item">$50-$10,000 per year</span>
+                          <span class="item">While the contract lasts.</span>
+                          <!--<span class="item">-</span>-->
+                        </div>
+                        <div class="list-item">
+                          <span class="item item-title">Custom AI solutions</span>
+                          <span class="item">$5,000-$100,000 for development</span>
+                          <span class="item">While contract lasts</span>
+                          <!--<span class="item">-</span>-->
+                        </div>
+                        <div class="list-item">
+                          <span class="item item-title">Ongoing AI nanagement</span>
+                          <span class="item">$100-$5,000 per month</span>
+                          <span class="item">While contract lasts</span>
+                          <!--<span class="item">-</span>-->
+                        </div>
+                        <!--<div class="list-item last-item">
+                          <span class="item item-title">Complex Arts</span>
+                          <span class="item">$1,100 to $2,400</span>
+                          <span class="item">-</span>
+                          <span class="item">-</span>
+                        </div>-->
+                    </li>
+                    <li>
+                      <div>
+                        <div class="main-list">
+                          <span class="title">Project Title</span>
+                          <span class="title">Budget</span>
+                          <span class="title">Estimated</span>
+                          <span class="title">Technology</span>
+                        </div>
+                        <div class="list-item">
+                          <span class="item item-title">Web Application Firewall</span>
+                          <span class="item">$59 per month</span>
+                          <span class="item">While the contract lasts</span>
+                          <span class="item">Application layer protection via machine learning and threat prevention</span>
+                        </div>
+                        <div class="list-item">
+                          <span class="item item-title">SSl/TLS Certificates</span>
+                          <span class="item">$200 per year</span>
+                          <span class="item">While the contract lasts</span>
+                          <span class="item">Public Key Infrastructure (PKI) with TLS protocols</span>
+                        </div>
+                        <div class="list-item">
+                          <span class="item item-title">DDoS Protection</span>
+                          <span class="item">$20 per month</span>
+                          <span class="item">While the contract lasts</span>
+                          <span class="item">Traffic scrubbing, filtering, and rate limiting</span>
+                        </div>
+                        <div class="list-item last-item">
+                          <span class="item item-title">Custom development</span>
+                          <span class="item">$5,000-$50,000(one-time, depending on project scope)</span>
+                          <span class="item">While the contract lasts</span>
+                          <span class="item">Secure coding</span>
+                          <span class="item"></span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="right-content">
+            <h4>Please feel free to join us in this quest of cleaning up digital spaces and dispensation of knowledge</h4>
+            <p>You are allowed here both as a client and service provider. We are <b>grateful</b>.<br><br>We are committed to making this technological word devoid of chaos and insanity.</p>
+            <div class="green-button">
+              <a href="{% url 'about' %}">Discover More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  {% block content %}
+
+ 
+  {% endblock %}
+
+  {% include 'saintke/plan_form.html' %}
+  
+
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading">
+            <h6>Testimonials</h6>
+            <h4>What They Say</h4>
+          </div>
+        </div>
+        <div class="col-lg-10 offset-lg-1">
+          <div class="owl-testimonials owl-carousel" style="position: relative; z-index: 5;">
+            <div class="item">
+              <i class="fa fa-quote-left"></i>
+              <p>“If you are seeking a company with skills, knowledge, and expertise here is clearly where to go. I wouldn't care to speak more about Kryptonite."</p>  
+              <h4>Michael, B</h4>
+              <span>Business Client</span>
+              <div class="right-image">
+                <!--<img src="{% static 'images/image.png' %}" style="width: 270px; height: 345px" alt="">-->
+              </div>
+            </div>
+            <div class="item">
+              <i class="fa fa-quote-left"></i>
+              <p>“Kryptonite transformed our approach to cybersecurity. Their advanced threat detection system stopped a ransomware attack in its tracks, saving our business from potential disaster. The level of experise and professionalism they bring is unmatched.”</p>
+              <h4>Andrew N.,</h4>
+              <span>IT Director at Beetech</span>
+              <div class="right-image">
+                <!--<img src="{% static 'images/testimonials-01.jpg' %}" alt="">-->
+              </div>
+            </div>
+            <div class="item">
+              <i class="fa fa-quote-left"></i>
+              <p>“As a startup, we needed cybersecurity solutions that were both cutting-edge and cost-effective. Kryptonite delivered beyond our expectations, setting up robust defenses that scaled with us as we grew. I couldn't recommend them more.”</p>
+              <h4>Amina K.,</h4>
+              <span>Manager</span>
+              <div class="right-image">
+                <!--<img src="{% static 'images/testimonials-01.jpg' %}" alt="">-->
+              </div>
+            </div>
+            <div class="item">
+              <i class="fa fa-quote-left"></i>
+              <p>“Kryptonite defense conduccted a thorough penetration test for our organisation, uncovering vulnerabilities we didn't even know existed. Their insights and actionable recommendations strengthened our defense.”</p>
+              <h4>Patrick K.,</h4>
+              <span>Security Manager</span>
+              <div class="right-image">
+                <!--<img src="{% static 'images/testimonials-01.jpg' %}" alt="">-->
+              </div>
+            </div>
+            <div class="item">
+              <i class="fa fa-quote-left"></i>
+              <p>“Working with Krptonite was an absolute pleasure. Their team is incredibly responsive and proactive, ensuring our sensitive remains secure. If you're looking for a cybersecurity partner yu can trust, look no further.”</p>
+              <h4>Neeraj Kumar</h4>
+              <span>CTO Kryptonite defense</span>
+              <div class="right-image">
+                <!--<img src="{% static 'images/testimonials-01.jpg' %}" alt="">-->
+              </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section class="partners">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-sm-4 col-6">
+          <div class="item">
+            <img src="{% static 'images/partner1.png' %}" style="width: 100px; height: 70px;"  alt="">
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-6">
+          <div class="item">
+            <a href="https://www.facebook.com/share/fKMUMJdJtVuaUesp/" target="_blank"><img src="{% static 'images/facebook.png' %}" style="width: 100px; height: 70px;" alt=""></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-6">
+          <div class="item">
+            <a href="https://x.com/amujinho1?s=08" target="_blank"><img src="{% static 'images/x.jpg' %}" style="width: 100px; height: 70px;" alt=""></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-6">
+          <div class="item">
+            <a href="https://www.linkedin.com/in/benard-ogwata-b33716282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="{% static 'images/linkedin.png' %}" style="width: 100px; height: 70px;" alt=""></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-6">
+          <div class="item">
+            <a href="https://particle14.com"><!--<img src="{% static 'images/client-01.png' %}" alt="">-->Particle 14</a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-6">
+          <div class="item">
+            <img src="{% static 'images/partner1.png' %}" style="width: 100px; height: 70px;" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2025 Kryptonite Defense Co., Ltd. All Rights Reserved. 
+          
+          <!--<br>Designed by <a title="CSS Templates" rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a></p>-->
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    <script src="{% static 'js/isotope.min.js' %}"></script>
+    <script src="{% static 'js/owl-carousel.js' %}"></script>
+
+    <script src="{% static 'js/tabs.js' %}"></script>
+    <script src="{% static 'js/swiper.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+    <script>
+        var interleaveOffset = 0.5;
+
+      var swiperOptions = {
+        loop: true,
+        speed: 1000,
+        grabCursor: true,
+        watchSlidesProgress: true,
+        mousewheelControl: true,
+        keyboardControl: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        on: {
+          progress: function() {
+            var swiper = this;
+            for (var i = 0; i < swiper.slides.length; i++) {
+              var slideProgress = swiper.slides[i].progress;
+              var innerOffset = swiper.width * interleaveOffset;
+              var innerTranslate = slideProgress * innerOffset;
+              swiper.slides[i].querySelector(".slide-inner").style.transform =
+                "translate3d(" + innerTranslate + "px, 0, 0)";
+            }      
+          },
+          touchStart: function() {
+            var swiper = this;
+            for (var i = 0; i < swiper.slides.length; i++) {
+              swiper.slides[i].style.transition = "";
+            }
+          },
+          setTransition: function(speed) {
+            var swiper = this;
+            for (var i = 0; i < swiper.slides.length; i++) {
+              swiper.slides[i].style.transition = speed + "ms";
+              swiper.slides[i].querySelector(".slide-inner").style.transition =
+                speed + "ms";
+            }
+          }
+        }
+      };
+
+      var swiper = new Swiper(".swiper-container", swiperOptions);
+    </script>
+  </body>
+</html>

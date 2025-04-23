@@ -1,0 +1,79 @@
+{% extends 'index.html' %}
+{% load static %}
+
+<header class = "header">
+    <!--<h1>The Saint Inc. and The Saint AI. </h1>
+    <img src="{% static 'images/logo.jpg' %}" style="border: 2px solid #ccc; border-radius: 20px;" alt="The Saint" width="100" height="50">
+    
+    <div clsss="banner">
+        <div class="terminal">
+            <input type="text" id="search" placeholder="Type your serach here...">
+            <button id="searchBtn">Search</button>
+        </div>-->
+   <!-- </div>-->
+</header>
+
+
+
+<!---<div clsss="banner">
+    <div class="terminal">
+        <input type="text" id="search" placeholder="Type your serach here...">
+        <button id="searchBtn">Search</button>
+    </div>
+</div> -->
+
+<!--
+<div class="content">
+<main>
+    <section class = "description">
+        <h2>Driving digital transformation across Kenya</h2>
+        <p>At the Saint Inc., we are dedicated to transforming the digital landscape with cutting-edge tech solutions. Our mission is to empower businesses through innovative software development, robust cybersecurity measures, seamless It consulting services.</p>
+
+        <p>We specialize in:</p>
+        <ul>
+            <li>Custom software development.</li>
+            <li>AI model training and implementation.</li>
+            <li>Cloud computing solutions.</li>
+            <li>Cybersecurity services.</li>
+            <li>IT Consulting  and Support</li>
+        </ul>
+    </section>
+
+    <section class="description">
+        <h2>Where technology meets innovation</h2>
+        <p>Our dedication to excellence and our customer-focused methodology are what make us unique. We customize our solutions to fit the particular requirements of every customer, guaranteeing peak effectiveness and fulfillment.</p>
+        <p>Our services are intended for companies of all sizes, from start-ups to major corporations, who want to use technology to increase productivity and growth</p>
+        <p>Are you prepared to advance your company's operations? Talk to us now to find out how we can support you in reaching your objectives</p>
+    </section>
+    <section class="profile">
+        <h2>Meet Our Team</h2>
+        <div>
+            <img src="{% static 'images/image.png' %}" alt="Santino Ben" width="300" height="200">
+            <p><b>Santino Ben</b>: C.E.O and founder, The Saint Inc.</p>
+        </div>
+    </section>
+    <section class="services">
+        <h2>Our services</h2>-->
+        <!--<ul>
+            {% for service in services %}
+            <li>
+                <h3>{{ service.title }}</h3>
+                <p>{{ service.description }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+</main>
+</div>-->
+
+{% block content %}
+<h2>{{ data.title }}</h2>
+<p>{{ data.content }}</p>
+
+{% if messages %}
+{% for messages in messages %}
+<p style="color: green;">{{ message }}</p>
+{% endfor %}
+{% endif %}
+
+{% endblock %}
